@@ -1,0 +1,175 @@
+/* Importing the Google Fonts CSS file for the Poppins font with various weights */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/* Include the base styles provided by Tailwind CSS */
+@tailwind base;
+
+/* Include the pre-defined components provided by Tailwind CSS */
+@tailwind components;
+
+/* Include the utility classes provided by Tailwind CSS */
+@tailwind utilities;
+
+/* Custom CSS properties */
+
+/* Define a CSS variable for a black gradient */
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  
+  /* Define a CSS variable for a card shadow */
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+/* Apply smooth scrolling behavior to all elements */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Text gradient style */
+
+/* Apply a radial gradient to text */
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Background styles with gradients */
+
+/* Apply a blue gradient background */
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+/* Apply a black gradient background */
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+/* Apply a black gradient background in the opposite direction */
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+/* Apply a gray gradient background */
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+/* Apply a discount gradient background */
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+/* Box shadow style */
+
+/* Apply a box shadow */
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+/* Sidebar animation */
+.sidebar {
+  /* Apply a slide-top animation using keyframes */
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Define keyframes for the slide-top animation */
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Hover styles for feature cards */
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+/* Set margin-right to 0px for the last feedback card in a container */
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+/* Transparent background for feedback cards */
+.feedback-card {
+  background: transparent;
+}
+
+/* Hover style for feedback cards */
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+/* Apply a blue gradient with blur */
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+/* Apply a pink gradient with blur */
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+/* Apply a white gradient with blur */
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
