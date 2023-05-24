@@ -1,48 +1,21 @@
-import React from 'react'
-import styles from '../style'
-import { discount, robot } from '../assets'
-import GetStarted from './GetStarted'
+import React from 'react';
+import styles from '../style';
+import { robot } from '../assets';
 
 const Hero = () => (
-
-  <section id="home" className={`flex 
-  md:flex-row flex-col ${styles.paddingY}`}>
-    
-    <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 
-    sm:px-16 px-6`}>
-
-      <div className='flex flex-row items-center py-[6px] px-4 
-      bg-discount-gradient rounded-[10px] mb-2'>
-        <img src={discount} alt="discount" className='w-[32px] h-[32px] '/>        
-        <p className={`${styles.paragraph} ml-2`}>
-          <span className='text-white'>20%</span> Discount For {" "}
-          <span className='text-white'>1 Month</span> Account
-        </p>
-      </div>
-
+  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
       <div className='flex flex-row justify-between items-center w-full'>
-        <h1 className='flex-1 font-poppins font-semibold 
-        ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]'>
-          The Next <br className='sm:block 
-          hidden' /> {" "} 
-          <span 
-          className='text-gradient'>Generation</
-          span>{" "}           
+        <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-black ss:leading-[100px] leading-[75px]'>
+          AI自动 <br className='sm:block hidden' /> <span className='text-gradient'>翻译 + 排版</span>
         </h1>
-
-        <div className='ss:flex hidden md:mr-4 mr-0'>
-          <GetStarted />
-        </div>
       </div>
 
-      <h1 className='font-poppins font-semibold 
-      ss:text-[68px] text-[52px] text-white 
-      ss:leading-[100px] leading-[75px] 
-      w-full'>Payment Method.</h1>
-  
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Our team of experts uses a methodology to identify the credit cards 
-        most likely to fit your needs. We examine annual percentage rates, annual fees.
+      <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-black ss:leading-[100px] leading-[75px] w-full'>中文简历.</h1>
+
+      <p className={`${styles.paragraph} max-w-[470px] mt-5 text-black`}>
+        厌倦了虚假的“人工翻译”？<br/>
+        GPT-4驱动，翻译精度和速度远超其他产品。
       </p>
     </div>
 
@@ -53,13 +26,7 @@ const Hero = () => (
       <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient' />
       <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient' />
     </div>
-
-    <div className={`ss:hidden ${styles.flexCenter}`}>
-      <GetStarted />
-    </div>   
-
   </section>
-  
-)
+);
 
-export default Hero
+export default Hero;
