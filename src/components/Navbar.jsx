@@ -7,13 +7,13 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar bg-primary">
-      <img src={logo} alt="hoobank" className="w-48 h-auto" />
+      <img src={logo} alt="hoobank" className="w-64 h-auto ml-0" /> {/* Adjust the ml value as needed for the logo position */}
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 space-x-10">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className="font-poppins font-normal cursor-pointer text-[16px] text-black"
+            className="font-poppins font-normal cursor-pointer text-[18px] text-black" // Increase the font size to make the menu fonts larger
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
@@ -38,7 +38,7 @@ const Navbar = () => {
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className="font-poppins font-normal cursor-pointer text-[16px] mb-4 text-black"
+              className="font-poppins font-normal cursor-pointer text-[18px] mb-4 text-black" // Increase the font size to make the menu fonts larger
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>

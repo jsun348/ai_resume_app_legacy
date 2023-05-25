@@ -3,43 +3,39 @@ import { people01, people02, people03, facebook, instagram, linkedin, twitter, a
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "主页",
   },
   {
     id: "features",
-    title: "Features",
+    title: "定价",
   },
   {
     id: "product",
-    title: "Product",
-  },
-  {
-    id: "clients",
-    title: "Clients",
-  },
+    title: "登录",
+  }
 ];
 
 export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "上传中文简历",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Resumagic自动识别归类简历内容",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "选择简历模板",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Resumagica自动完成LaTex排版.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "调整并保存",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "检阅并最终调整简历内容，下载保存.",
   },
 ];
 

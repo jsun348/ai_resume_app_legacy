@@ -30,14 +30,15 @@
 .text-gradient {
   background: linear-gradient(
     135deg,
-    #00FFB4 0%,
-    #00B87C 100%
+    #4682B4 0%,    /* SteelBlue */
+    #483D8B 100%   /* DarkSlateBlue */
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
+
 
 /* Background styles with gradients */
 
